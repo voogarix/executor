@@ -11,8 +11,8 @@ sudo apt upgrade
 
 
 
-EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/v0.33.0/executor-linux-v0.33.0.tar.gz"
-EXECUTOR_FILE="executor-linux-v0.33.0.tar.gz"
+EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/v0.33.0/executor-linux-v0.34.0.tar.gz"
+EXECUTOR_FILE="executor-linux-v0.34.0.tar.gz"
 
 echo "Downloading the Executor binary from $EXECUTOR_URL..."
 curl -L -o $EXECUTOR_FILE $EXECUTOR_URL
@@ -36,8 +36,8 @@ export LOG_LEVEL=debug
 export LOG_PRETTY=false
 export EXECUTOR_PROCESS_ORDERS=true
 export EXECUTOR_PROCESS_CLAIMS=true
-export EXECUTOR_MAX_L3_GAS_PRICE=1000
-export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=false
+export EXECUTOR_MAX_L3_GAS_PRICE=200000
+export EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true
 
 read -p "Enter your Private Key from Metamask: " PRIVATE_KEY_LOCAL
 export PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL
